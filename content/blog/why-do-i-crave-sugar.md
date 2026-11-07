@@ -1,4 +1,5 @@
 title: Why Do I Crave Sugar? 7 Common Causes and What to Do
+seotitle: Why Do I Crave Sugar? 7 Causes and Fixes
 description: The real reasons behind sugar cravings, from short sleep and stress to habit and long gaps between meals, and what to do about each one.
 slug: why-do-i-crave-sugar
 date: 2026-11-07

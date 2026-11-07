@@ -1,4 +1,5 @@
 title: Sugar Withdrawal: Symptoms, Timeline and How to Get Through It
+seotitle: Sugar Withdrawal Symptoms and Timeline
 description: What sugar withdrawal can feel like, what the research says about how long it lasts, and practical ways to get through the first week of cutting back.
 slug: sugar-withdrawal-symptoms-timeline
 date: 2026-11-07

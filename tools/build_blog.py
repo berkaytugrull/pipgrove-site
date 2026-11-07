@@ -111,7 +111,7 @@ def post_page(p, others):
             f"<details><summary>{html.escape(q)}</summary><p>{html.escape(a)}</p></details>" for q, a in p["faq"]) + "</section>"
     more = "".join(f'<li><a href="/blog/{o["slug"]}/">{html.escape(o["title"])}</a></li>' for o in others)
     minutes = max(1, round(p["words"] / 230))
-    out = HEAD.format(title=html.escape(p["title"]) + " · Pipgrove", description=html.escape(p["description"]), url=url,
+    out = HEAD.format(title=html.escape(p.get("seotitle", p["title"])), description=html.escape(p["description"]), url=url,
                       ogtype="article", ogtitle=html.escape(p["title"]), ld=ld, SITE=SITE, APP=APP)
     out += f"""<main id="main" class="post">
   <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Pipgrove</a> / <a href="/blog/">Blog</a></nav>
@@ -142,7 +142,7 @@ def index_page(posts):
         "@context": "https://schema.org", "@type": "Blog", "name": "The Pipgrove blog", "url": url,
         "blogPost": [{"@type": "BlogPosting", "headline": p["title"], "url": f"{SITE}/blog/{p['slug']}/", "datePublished": p["date"]} for p in posts]},
         ensure_ascii=False) + "</script>"
-    out = HEAD.format(title="Quit Sugar Blog: Cravings, Withdrawal and Habits · Pipgrove",
+    out = HEAD.format(title="Quit Sugar Blog: Cravings, Withdrawal, Habits",
                       description="Plain, research-backed guides to sugar cravings, sugar withdrawal and building a calmer relationship with sugar.",
                       url=url, ogtype="website", ogtitle="The Pipgrove blog", ld=ld, SITE=SITE, APP=APP)
     cards = "".join(f"""<li class="card"><a href="/blog/{p['slug']}/"><img src="{p['image']}" alt="" width="96" height="96" loading="lazy" decoding="async"><span><b>{html.escape(p['title'])}</b><small>{html.escape(p['description'])}</small></span></a></li>""" for p in posts)
@@ -165,7 +165,7 @@ def main():
     (ROOT / "blog/index.html").write_text(index_page(posts), encoding="utf-8")
     today = date.today().isoformat()
     urls = [("/", today, "1.0"), ("/blog/", today, "0.8")] + [(f"/blog/{p['slug']}/", p["date"], "0.7") for p in posts] + \
-           [("/support.html", "2026-11-07", "0.3"), ("/privacy.html", "2026-11-07", "0.3"), ("/terms.html", "2026-11-07", "0.3"), ("/health.html", "2026-11-07", "0.3")]
+           []
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
         f"  <url><loc>{SITE}{u}</loc><lastmod>{m}</lastmod><priority>{pr}</priority></url>\n" for u, m, pr in urls) + "</urlset>\n"
     (ROOT / "sitemap.xml").write_text(sm, encoding="utf-8")

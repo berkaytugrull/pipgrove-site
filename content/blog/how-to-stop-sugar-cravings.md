@@ -1,4 +1,5 @@
 title: How to Stop Sugar Cravings: 11 Things That Actually Help
+seotitle: How to Stop Sugar Cravings: 11 Things That Help
 description: Practical, research-backed ways to stop sugar cravings in the moment and make them rarer over time, from a 15-minute walk to riding the urge and fixing sleep.
 slug: how-to-stop-sugar-cravings
 date: 2026-11-07
