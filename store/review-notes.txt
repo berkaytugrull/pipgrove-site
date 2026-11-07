@@ -1,0 +1,27 @@
+1. SCREEN RECORDING
+Attached (Attachment field): recorded on a physical iPhone running the latest iOS, starting from app launch. It shows onboarding, the free core flow (craving SOS, check-in, garden), the paywall, a Pro purchase in the sandbox, and Pro content unlocking. There is no account registration, login or user-generated content in the app.
+
+2. PURPOSE AND AUDIENCE
+Pipgrove is a gentle 28-day habit coach for adults who want to cut down on added sugar. The problem: sugar cravings are strong and most people quit diets after a slip. Pipgrove helps in the moment with a 2-minute craving SOS (notice, breathe, choose a swap), short daily lessons, and a garden that grows with every sugar-free day and every craving beaten. A slip never resets progress. It is not a medical app and does not give medical advice.
+
+3. HOW TO USE / ACCESS FEATURES
+No account or login is needed. Launch the app, answer the short onboarding questions, then on the plan screen either start the free trial or tap "Continue with the free version".
+- Craving SOS: tap "Craving something sweet?" on Home (always free).
+- Daily quests: Morning intention, 1-minute lesson, Evening check-in (opens in the evening) on Home.
+- Tools tab: hidden-sugar barcode scanner and natural swap ideas.
+- Progress tab: weekly pattern, badges, garden visitors.
+- Journey tab: the 28-day garden stages.
+- Pro: Settings (top-right profile icon) > Status "Free · see Pro" opens the paywall. Pro unlocks lessons and garden stages after the first week, unlimited scans (free: 3 a day), craving forecast, extra shields and full reports. Restore purchase is on the paywall.
+
+4. EXTERNAL SERVICES
+- Apple StoreKit via RevenueCat: subscriptions and restore.
+- Apple CloudKit: optional "Buddy streak" (shares only a first name and check-in days with one invited friend).
+- Open Food Facts public API: product sugar data for the barcode scanner.
+- TelemetryDeck: anonymous, privacy-first usage counts (no personal data, no tracking).
+No AI services, no login provider, no ads.
+
+5. REGIONAL DIFFERENCES
+None. The app works the same in all regions; only prices are localized by the App Store.
+
+6. REGULATED CONTENT
+Not applicable. Pipgrove is not a medical device, gives no diagnosis or treatment, and uses no protected third-party material.
