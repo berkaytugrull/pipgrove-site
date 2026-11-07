@@ -76,7 +76,9 @@ const $$ = (s, el = document) => [...el.querySelectorAll(s)];
     draw(t);
     raf = requestAnimationFrame(tick);
   }
+  const ev = (n) => window.gtag && window.gtag("event", n);
   function start() {
+    ev("try_wave_start");
     cancelAnimationFrame(raf);
     done.hidden = true; phase = "";
     go.hidden = true; stop.hidden = false;
@@ -92,6 +94,7 @@ const $$ = (s, el = document) => [...el.querySelectorAll(s)];
     draw(0); go.focus();
   }
   function finish() {
+    ev("try_wave_finish");
     draw(LEN);
     card.dataset.state = "done"; phase = "";
     say.textContent = "The wave passed.";
@@ -133,8 +136,11 @@ const $$ = (s, el = document) => [...el.querySelectorAll(s)];
       minus.disabled = v[k] <= 0; plus.disabled = v[k] >= 12;
     });
   }
+  let used = false;
+  const touched = () => { if (!used) { used = true; window.gtag && window.gtag("event", "calculator_used"); } };
   $$(".stepper").forEach((st) => {
     const k = st.dataset.k, [minus, , plus] = st.children;
+    st.addEventListener("click", touched);
     minus.addEventListener("click", () => { v[k] = Math.max(0, v[k] - 1); render(); });
     plus.addEventListener("click", () => { v[k] = Math.min(12, v[k] + 1); render(); });
   });

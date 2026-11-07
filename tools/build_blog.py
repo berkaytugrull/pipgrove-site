@@ -58,6 +58,7 @@ HEAD = """<!doctype html>
 <link rel="preload" href="/assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/manrope-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/blog.css">
+<script src="/assets/ga.js" defer></script>
 {ld}
 </head>
 <body>
