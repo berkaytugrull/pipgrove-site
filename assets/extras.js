@@ -6,15 +6,14 @@ const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 // ---- Rail and mobile bar visibility ------------------------------------------
 {
   const rail = $(".rail"), bar = $(".mob-cta"), story = $(".story"), closing = $(".closing");
-  let storyIn = true, closingIn = false;
+  let closingIn = false;
   const sync = () => {
-    rail.classList.toggle("off", !storyIn);
+    rail.classList.toggle("off", story.getBoundingClientRect().bottom < innerHeight * 0.6);
     const on = scrollY > innerHeight * 0.8 && !closingIn;
     bar.classList.toggle("on", on);
     bar.setAttribute("aria-hidden", on ? "false" : "true");
     bar.tabIndex = on ? 0 : -1;
   };
-  new IntersectionObserver(([e]) => { storyIn = e.intersectionRatio > 0.15; sync(); }, { threshold: [0, 0.15, 0.3] }).observe(story);
   new IntersectionObserver(([e]) => { closingIn = e.isIntersecting; sync(); }).observe(closing);
   addEventListener("scroll", sync, { passive: true });
   sync();

@@ -1,8 +1,9 @@
 // Pipgrove landing: one sticky 3D stage. A phone floats in the night garden with
 // fireflies around it; each story step spins it to a new screen, Pip changes mood,
 // and on the visitors step the garden friends circle the phone.
-import * as THREE from "./vendor/three.module.min.js";
-import { RoomEnvironment } from "./vendor/RoomEnvironment.js";
+// three.js is loaded after the page has painted, so the first view stays fast.
+let THREE, RoomEnvironment;
+let activeStep = 0;
 
 const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
 const $ = (s, el = document) => el.querySelector(s);
@@ -37,11 +38,23 @@ function applyStepChrome(i) {
 }
 applyStepChrome(0);
 
+const fallbackStep = (i) => { activeStep = i; applyStepChrome(i); fallback.src = `assets/screens/${steps[i].dataset.screen}.webp`; };
+onStep = fallbackStep;
 if (!webglOK()) {
   document.documentElement.classList.add("no-webgl");
-  onStep = (i) => { applyStepChrome(i); fallback.src = `assets/screens/${steps[i].dataset.screen}.webp`; };
 } else {
-  start();
+  document.documentElement.classList.add("pre3d");
+  const boot = async () => {
+    try {
+      const [three, room] = await Promise.all([import("./vendor/three.module.min.js"), import("./vendor/RoomEnvironment.js")]);
+      THREE = three; RoomEnvironment = room.RoomEnvironment;
+      start();
+    } catch {
+      document.documentElement.classList.replace("pre3d", "no-webgl");
+    }
+  };
+  const later = () => ("requestIdleCallback" in window ? requestIdleCallback(boot, { timeout: 1200 }) : setTimeout(boot, 200));
+  if (document.readyState === "complete") later(); else addEventListener("load", later, { once: true });
 }
 
 function start() {
@@ -239,7 +252,9 @@ function start() {
       screens[k] = t;
     }
   }
-  screenMat.map = screens[steps[0].dataset.screen];
+  screenMat.map = screens[steps[activeStep].dataset.screen];
+  pipMat.map = pipTex[steps[activeStep].dataset.pip] || pipTex.happy;
+  visitorsOn = steps[activeStep].dataset.visitors === "1" ? 1 : 0;
 
   // ---- Layout: phone right of the copy on wide screens, above it on phones ----
   let mobile = false;
@@ -267,7 +282,7 @@ function start() {
   layout();
 
   // ---- Step changes: a full turn, swapping the screen while its back faces us ---
-  let current = 0, spin = null, pipPop = 0;
+  let current = activeStep, spin = null, pipPop = 0;
   const easeInOut = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
   onStep = (i) => {
     if (i === current) return;
@@ -301,6 +316,7 @@ function start() {
   }
 
   const clock = new THREE.Clock();
+  let shown = false;
   function frame(now) {
     if (!running) return;
     const t = clock.getElapsedTime();
@@ -353,6 +369,7 @@ function start() {
     camera.lookAt(0, 0, 0);
 
     renderer.render(scene, camera);
+    if (!shown) { shown = true; document.documentElement.classList.replace("pre3d", "ready3d"); }
     requestAnimationFrame(frame);
   }
   requestAnimationFrame(frame);

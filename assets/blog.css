@@ -1,0 +1,78 @@
+@font-face { font-family: "Instrument Serif"; font-style: normal; font-weight: 400; font-display: swap; src: url(fonts/instrument-serif-latin-400-normal.woff2) format("woff2"); }
+@font-face { font-family: "Instrument Serif"; font-style: italic; font-weight: 400; font-display: swap; src: url(fonts/instrument-serif-latin-400-italic.woff2) format("woff2"); }
+@font-face { font-family: "Manrope"; font-weight: 500; font-display: swap; src: url(fonts/manrope-latin-500-normal.woff2) format("woff2"); }
+@font-face { font-family: "Manrope"; font-weight: 700; font-display: swap; src: url(fonts/manrope-latin-700-normal.woff2) format("woff2"); }
+@font-face { font-family: "Manrope"; font-weight: 800; font-display: swap; src: url(fonts/manrope-latin-800-normal.woff2) format("woff2"); }
+
+:root { --night-0: #070b16; --night-1: #0c1426; --night-2: #13213a; --ink: #f1f4ff; --muted: #a9b6d3; --pink: #f7a9c4; --pink-ink: #3a1022; --mint: #7fe0bf; --line: rgba(255,255,255,.12);
+  --serif: "Instrument Serif", "Iowan Old Style", Georgia, serif; --body: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif; --g: clamp(20px, 5vw, 64px); color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: radial-gradient(120% 50% at 50% 0%, #13213a 0%, var(--night-0) 60%) no-repeat, var(--night-0); color: var(--ink); font: 500 18px/1.7 var(--body); -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; display: block; }
+a { color: var(--mint); text-underline-offset: 3px; }
+:focus-visible { outline: 2px solid var(--pink); outline-offset: 3px; border-radius: 4px; }
+.skip { position: absolute; left: -9999px; } .skip:focus { left: 12px; top: 8px; background: var(--ink); color: var(--night-0); padding: 8px 12px; border-radius: 8px; z-index: 9; }
+
+.bar { display: flex; align-items: center; justify-content: space-between; padding: 16px var(--g); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 5; background: rgba(7,11,22,.82); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+.brand { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font: italic 1.45rem/1 var(--serif); }
+.brand img { border-radius: 8px; }
+.bar nav { display: flex; gap: 22px; align-items: center; font-weight: 700; font-size: .92rem; }
+.bar nav a { color: var(--ink); text-decoration: none; }
+.bar .get { background: var(--pink); color: var(--pink-ink); padding: 8px 15px; border-radius: 999px; }
+
+.post, .blog-index { max-width: 44rem; margin: 0 auto; padding: 48px var(--g) 40px; }
+.blog-index { max-width: 52rem; }
+.crumbs { font-size: .85rem; color: var(--muted); }
+.crumbs a { color: var(--muted); }
+.post-head { margin: 22px 0 40px; }
+h1, h2, h3 { font-weight: 400; text-wrap: balance; }
+.post-head h1 { font-family: var(--serif); font-size: clamp(2.5rem, 6vw, 3.8rem); line-height: 1.02; margin: 0; letter-spacing: -.01em; }
+.post-head h1 em { color: var(--pink); }
+.dek { color: #d4dbee; font-size: 1.15rem; margin: 18px 0 0; }
+.meta { color: var(--muted); font-size: .88rem; margin: 14px 0 0; }
+
+.prose { font-size: 1.06rem; }
+.prose h2 { font-family: var(--serif); font-size: 2.1rem; line-height: 1.1; margin: 2.2em 0 .5em; }
+.prose h3 { font-weight: 800; font-size: 1.1rem; margin: 1.8em 0 .3em; }
+.prose p, .prose ul, .prose ol { margin: 0 0 1.1em; color: #dfe5f4; }
+.prose li { margin: .35em 0; }
+.prose strong { color: var(--ink); }
+.prose em { color: var(--ink); }
+.prose table { width: 100%; border-collapse: collapse; margin: 1.4em 0; font-size: .95rem; }
+.prose th, .prose td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.prose th { color: var(--muted); font-weight: 700; }
+.prose td:first-child { white-space: nowrap; font-weight: 700; color: var(--pink); }
+
+.post-faq { margin-top: 48px; }
+.post-faq h2, .more h2 { font-family: var(--serif); font-size: 2rem; margin: 0 0 14px; }
+.post-faq details { border-top: 1px solid var(--line); }
+.post-faq details:last-child { border-bottom: 1px solid var(--line); }
+.post-faq summary { cursor: pointer; padding: 16px 0; font-weight: 700; }
+.post-faq details p { margin: 0 0 18px; color: var(--muted); }
+
+.cta { display: flex; gap: 22px; align-items: center; margin: 56px 0 0; padding: 26px; border-radius: 26px; border: 1px solid rgba(247,169,196,.35); background: radial-gradient(100% 90% at 100% 0%, rgba(247,169,196,.16), transparent 60%), linear-gradient(160deg, #15243f, #0d1830); }
+.cta img { width: 110px; flex: none; }
+.cta-h { font-family: var(--serif); font-size: 1.9rem; line-height: 1.05; margin: 0 0 8px; }
+.cta-h em { color: var(--pink); }
+.cta p { margin: 0 0 14px; color: var(--muted); font-size: .98rem; }
+.badge { display: inline-block; background: #000; color: #fff; border: 1px solid #a6a6a6; border-radius: 11px; padding: 10px 16px; font-weight: 700; text-decoration: none; }
+@media (max-width: 560px) { .cta { flex-direction: column; text-align: center; } }
+
+.more { margin-top: 48px; }
+.more ul { list-style: none; padding: 0; margin: 0; }
+.more li { border-top: 1px solid var(--line); }
+.more a { display: block; padding: 14px 0; color: var(--ink); text-decoration: none; font-weight: 700; }
+.more a:hover { color: var(--pink); }
+
+.cards { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+.card a { display: flex; gap: 20px; align-items: center; padding: 20px; border-radius: 22px; border: 1px solid var(--line); background: rgba(255,255,255,.03); color: var(--ink); text-decoration: none; transition: border-color .2s, background .2s; }
+.card a:hover { border-color: rgba(247,169,196,.45); background: rgba(247,169,196,.05); }
+.card img { width: 84px; flex: none; }
+.card b { display: block; font-family: var(--serif); font-weight: 400; font-size: 1.6rem; line-height: 1.1; }
+.card small { display: block; margin-top: 6px; color: var(--muted); font-size: .92rem; line-height: 1.5; }
+
+.foot { border-top: 1px solid var(--line); margin-top: 40px; padding: 30px var(--g) 40px; color: var(--muted); font-size: .9rem; }
+.foot .inner { max-width: 52rem; margin: 0 auto; display: grid; gap: 12px; }
+.foot nav { display: flex; flex-wrap: wrap; gap: 6px 20px; }
+.foot nav a { color: var(--ink); text-decoration: none; }
+.foot .legal { font-size: .8rem; }
