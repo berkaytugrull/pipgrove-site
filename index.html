@@ -28,6 +28,7 @@
 <header class="top">
   <a class="brand" href="#top" aria-label="Pipgrove home"><img src="assets/icon.png" alt="" width="34" height="34"><span>Pipgrove</span></a>
   <nav aria-label="Main">
+    <a href="#try">Try it</a>
     <a href="#pricing">Pricing</a>
     <a href="#faq">Questions</a>
     <a class="nav-get" href="https://apps.apple.com/app/id6831633288">Get the app</a>
@@ -43,8 +44,11 @@
       <div class="scrim"></div>
     </div>
 
+    <nav class="rail" aria-label="Story steps">
+      <a href="#s0" aria-label="Start"></a><a href="#s1" aria-label="SOS"></a><a href="#s2" aria-label="Swaps"></a><a href="#s3" aria-label="Visitors"></a><a href="#s4" aria-label="Patterns"></a><a href="#s5" aria-label="Letters"></a>
+    </nav>
     <div class="steps">
-      <article class="step step-hero" data-screen="home" data-pip="happy">
+      <article id="s0" class="step step-hero" data-screen="home" data-pip="happy">
         <h1>Beat cravings.<br><em>Grow a garden.</em></h1>
         <p class="lede">Pipgrove is a calm coach for quitting added sugar. Every sugar-free day grows your night garden, and every craving you ride out leaves a flower.</p>
         <div class="cta-row">
@@ -57,30 +61,84 @@
         <p class="scroll-hint">Scroll to walk through the garden</p>
       </article>
 
-      <article class="step" data-screen="sos" data-pip="calm">
+      <article id="s1" class="step" data-screen="sos" data-pip="calm">
         <h2>Craving? <em>Ride the wave.</em></h2>
         <p>A craving feels urgent, then it passes. Tap SOS and Pip breathes with you through a two-minute wave, then offers one small thing to do next.</p>
       </article>
 
-      <article class="step" data-screen="ideas" data-pip="encourage">
+      <article id="s2" class="step" data-screen="ideas" data-pip="encourage">
         <h2>Swap sugar for <em>something real.</em></h2>
         <p>Real swaps when the urge hits: berries with yogurt, a cinnamon tea, a short walk, a glass of water. Scan a barcode to see how much sugar a snack really has.</p>
       </article>
 
-      <article class="step" data-screen="badges" data-pip="proud" data-visitors="1">
+      <article id="s3" class="step" data-screen="badges" data-pip="proud" data-visitors="1">
         <h2>Collect visitors <em>as you grow.</em></h2>
         <p>A moth when you beat a late-night craving, a bee when you pick a fruit swap, a fox at fourteen sugar-free days. Twelve garden friends, and once they arrive they stay.</p>
       </article>
 
-      <article class="step" data-screen="progress" data-pip="happy" data-bloom="1">
+      <article id="s4" class="step" data-screen="progress" data-pip="happy" data-bloom="1">
         <h2>Know your <em>craving pattern.</em></h2>
         <p>Weekly reports show when cravings hit and what helped. Over time the garden fills in, and so does the picture of your own habits.</p>
       </article>
 
-      <article class="step" data-screen="letter" data-pip="cheer" data-bloom="1">
+      <article id="s5" class="step" data-screen="letter" data-pip="cheer" data-bloom="1">
         <h2>A kind letter <em>every morning.</em></h2>
         <p>Pip writes a short note each day about how far you have come. No guilt, no lectures, just a friend who noticed.</p>
       </article>
+    </div>
+  </section>
+
+  <section class="try" id="try" aria-labelledby="try-h">
+    <div class="wrap try-grid">
+      <div class="try-copy">
+        <h2 id="try-h">Ride a craving <em>right here.</em></h2>
+        <p>Cravings rise, peak and fade, usually faster than it feels. Follow the circle for thirty seconds and watch the wave pass. This is a short version of the SOS in the app.</p>
+        <ul class="try-legend" aria-hidden="true"><li><i class="lg-wave"></i>How strong the urge feels</li><li><i class="lg-breath"></i>Your breath</li></ul>
+      </div>
+      <div class="wave-card" data-state="idle">
+        <canvas id="wave" aria-hidden="true"></canvas>
+        <div class="breath" aria-hidden="true"><div class="ring"></div><img src="assets/art/pip_calm.webp" alt="" class="wave-pip"></div>
+        <p class="wave-say" aria-live="polite">Ready when you are</p>
+        <p class="wave-time" aria-hidden="true"></p>
+        <div class="wave-done" hidden>
+          <img src="assets/art/visitor_butterfly.webp" alt="" width="96" height="96">
+          <p class="done-h">The wave passed.</p>
+          <p class="done-p">In Pipgrove, every craving you ride out plants a flower in your garden.</p>
+        </div>
+        <div class="wave-actions">
+          <button type="button" class="btn-primary" id="wave-go">Start 30 seconds</button>
+          <button type="button" class="btn-quiet" id="wave-stop" hidden>Stop</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="calc" id="calc" aria-labelledby="calc-h">
+    <div class="wrap calc-grid">
+      <div class="calc-form">
+        <h2 id="calc-h">What does your sugar <em>add up to?</em></h2>
+        <p class="sub">A rough guess is fine. Nothing you enter leaves this page.</p>
+        <div class="stepper-row">
+          <div><b>Sweet things a day</b><small>Cookies, candy, pastries, desserts</small></div>
+          <div class="stepper" data-k="sweets"><button type="button" aria-label="One fewer sweet">−</button><output aria-live="polite">2</output><button type="button" aria-label="One more sweet">+</button></div>
+        </div>
+        <div class="stepper-row">
+          <div><b>Sugary drinks a day</b><small>Soda, juice, energy drinks, sweet coffee</small></div>
+          <div class="stepper" data-k="drinks"><button type="button" aria-label="One fewer drink">−</button><output aria-live="polite">1</output><button type="button" aria-label="One more drink">+</button></div>
+        </div>
+        <p class="calc-note">Estimates use about 15 g per sweet and 30 g per drink, at $1.50 and $2 each, the same as the app.</p>
+      </div>
+      <div class="calc-out">
+        <div class="cubes" aria-hidden="true"></div>
+        <p class="cubes-key"><span><i></i>One cube is 4 g</span><span><i class="k-over"></i>Over 25 g a day</span></p>
+        <p class="calc-big"><span id="c-grams">60</span> g <small>of added sugar a day</small></p>
+        <p class="calc-line">About <b id="c-cubes">15</b> sugar cubes, against a common guideline of 25 to 36 g.</p>
+        <div class="calc-stats">
+          <div><b id="c-kg">22</b><span>kg a year</span></div>
+          <div><b id="c-usd">$1,825</b><span>spent a year</span></div>
+        </div>
+        <p class="calc-half">Cut it in half and you keep <b id="c-save">$913</b> and skip <b id="c-skip">11 kg</b> of sugar in a year.</p>
+      </div>
     </div>
   </section>
 
@@ -153,6 +211,9 @@
   </div>
 </footer>
 
+<a class="mob-cta" href="https://apps.apple.com/app/id6831633288" tabindex="-1" aria-hidden="true"><img src="assets/icon.png" alt="" width="36" height="36"><span><b>Pipgrove</b><small>Free for your first week</small></span><em>Get</em></a>
+
 <script type="module" src="assets/site.js"></script>
+<script type="module" src="assets/extras.js"></script>
 </body>
 </html>

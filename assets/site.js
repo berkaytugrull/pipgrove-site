@@ -30,9 +30,12 @@ const io = new IntersectionObserver((entries) => {
 }, { rootMargin: "-45% 0px -45% 0px" });
 steps.forEach((s) => io.observe(s));
 
+const railLinks = $$(".rail a");
 function applyStepChrome(i) {
   stage.classList.toggle("bloom", steps[i].dataset.bloom === "1");
+  railLinks.forEach((a, k) => { if (k === i) a.setAttribute("aria-current", "step"); else a.removeAttribute("aria-current"); });
 }
+applyStepChrome(0);
 
 if (!webglOK()) {
   document.documentElement.classList.add("no-webgl");
