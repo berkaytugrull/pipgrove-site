@@ -16,7 +16,7 @@ import markdown
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE = "https://pipgrove.com"
-APP = "https://apps.apple.com/app/id6831633288"
+APP = "https://apps.apple.com/app/apple-store/id6831633288?pt=129745812&amp;ct=blog&amp;mt=8"
 
 
 def parse(path):
