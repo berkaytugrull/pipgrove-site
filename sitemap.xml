@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://pipgrove.com/</loc><lastmod>2026-11-07</lastmod><priority>1.0</priority></url>
-  <url><loc>https://pipgrove.com/blog/</loc><lastmod>2026-11-07</lastmod><priority>0.8</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://pipgrove.com/</loc><lastmod>2026-11-11</lastmod><priority>1.0</priority><xhtml:link rel="alternate" hreflang="en" href="https://pipgrove.com/"/><xhtml:link rel="alternate" hreflang="pt" href="https://pipgrove.com/pt/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://pipgrove.com/"/></url>
+  <url><loc>https://pipgrove.com/pt/</loc><lastmod>2026-11-11</lastmod><priority>0.9</priority><xhtml:link rel="alternate" hreflang="en" href="https://pipgrove.com/"/><xhtml:link rel="alternate" hreflang="pt" href="https://pipgrove.com/pt/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://pipgrove.com/"/></url>
+  <url><loc>https://pipgrove.com/blog/</loc><lastmod>2026-11-11</lastmod><priority>0.8</priority></url>
+  <url><loc>https://pipgrove.com/blog/how-much-sugar-per-day/</loc><lastmod>2026-11-11</lastmod><priority>0.7</priority></url>
+  <url><loc>https://pipgrove.com/blog/how-much-sugar-in-coke/</loc><lastmod>2026-11-11</lastmod><priority>0.7</priority></url>
+  <url><loc>https://pipgrove.com/blog/sugar-detox-plan/</loc><lastmod>2026-11-11</lastmod><priority>0.7</priority></url>
+  <url><loc>https://pipgrove.com/blog/night-sugar-cravings/</loc><lastmod>2026-11-11</lastmod><priority>0.7</priority></url>
+  <url><loc>https://pipgrove.com/blog/what-to-eat-when-craving-sugar/</loc><lastmod>2026-11-11</lastmod><priority>0.7</priority></url>
   <url><loc>https://pipgrove.com/blog/sugar-withdrawal-symptoms-timeline/</loc><lastmod>2026-11-07</lastmod><priority>0.7</priority></url>
   <url><loc>https://pipgrove.com/blog/how-to-stop-sugar-cravings/</loc><lastmod>2026-11-07</lastmod><priority>0.7</priority></url>
   <url><loc>https://pipgrove.com/blog/why-do-i-crave-sugar/</loc><lastmod>2026-11-07</lastmod><priority>0.7</priority></url>
+  <url><loc>https://pipgrove.com/pt/blog/</loc><lastmod>2026-11-11</lastmod><priority>0.8</priority></url>
+  <url><loc>https://pipgrove.com/pt/blog/como-parar-de-comer-doce/</loc><lastmod>2026-11-11</lastmod><priority>0.7</priority></url>
+  <url><loc>https://pipgrove.com/pt/blog/vontade-de-comer-doce/</loc><lastmod>2026-11-11</lastmod><priority>0.7</priority></url>
 </urlset>
