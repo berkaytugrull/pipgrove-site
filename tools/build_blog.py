@@ -24,6 +24,7 @@ def app_link(ct):
     return f"https://apps.apple.com/app/apple-store/id6831633288?pt=129745812&amp;ct={ct}&amp;mt=8"
 
 
+MONTHS_TR = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"]
 MONTHS_PT = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
 
 S = {
@@ -35,7 +36,7 @@ S = {
         badge="Download on the App Store",
         foot="Pipgrove is a calm iPhone coach for quitting added sugar. <a href=\"/\">See how it works</a>.",
         legal="Articles are for general information and are not medical advice. Apple and the App Store are trademarks of Apple Inc. © 2026 Pipgrove",
-        other='<a href="/pt/" hreflang="pt" lang="pt">Português</a>',
+        other='<a href="/pt/" hreflang="pt" lang="pt">Português</a> · <a href="/tr/" hreflang="tr" lang="tr">Türkçe</a>',
         idx_title="Quit Sugar Blog: Cravings, Withdrawal, Habits",
         idx_desc="Plain, research-backed guides to sugar cravings, sugar withdrawal and building a calmer relationship with sugar.",
         idx_h1="Notes from <em>the garden.</em>",
@@ -50,12 +51,27 @@ S = {
         badge="Baixar na App Store",
         foot="Pipgrove é um coach calmo para iPhone que ajuda a largar o açúcar adicionado. <a href=\"/pt/\">Veja como funciona</a>.",
         legal="Os artigos são informativos e não substituem orientação médica. Apple e App Store são marcas da Apple Inc. © 2026 Pipgrove",
-        other='<a href="/" hreflang="en" lang="en">English</a>',
+        other='<a href="/" hreflang="en" lang="en">English</a> · <a href="/tr/" hreflang="tr" lang="tr">Türkçe</a>',
         idx_title="Blog para largar o açúcar: vontade de doce e hábitos",
         idx_desc="Guias simples e baseados em pesquisa sobre vontade de comer doce, abstinência de açúcar e hábitos que duram.",
         idx_h1="Notas do <em>jardim.</em>",
         idx_dek="Guias simples sobre vontade de doce e hábitos que duram. Sem dieta da moda, sem culpa.",
         idx_og="O blog do Pipgrove",
+    ),
+    "tr": dict(
+        locale="tr_TR", home="/tr/", blog="/tr/blog/", app=app_link("tr-blog"), get="Uygulamayı indir", blog_label="Blog",
+        by="Pipgrove ekibi.", read="dk okuma", quick="Kısa cevaplar", more="Okumaya devam et",
+        cta_h="Tatlı krizini yen. <em>Bir bahçe büyüt.</em>",
+        cta_p="Pipgrove'da tatlı krizi için bir SOS düğmesi, şekersiz geçen her günle büyüyen bir bahçe ve her sabah nazik bir mektup var. İlk hafta ücretsiz. Uygulama şimdilik İngilizce.",
+        badge="App Store'dan indir",
+        foot="Pipgrove, eklenmiş şekeri bırakmana yardım eden sakin bir iPhone koçu. <a href=\"/tr/\">Nasıl çalıştığını gör</a>.",
+        legal="Yazılar genel bilgi amaçlıdır, tıbbi tavsiye yerine geçmez. Apple ve App Store, Apple Inc.'in ticari markalarıdır. © 2026 Pipgrove",
+        other='<a href="/" hreflang="en" lang="en">English</a> · <a href="/pt/" hreflang="pt" lang="pt">Português</a>',
+        idx_title="Şekeri Bırakma Blogu: Tatlı Krizi ve Alışkanlıklar",
+        idx_desc="Tatlı krizi, şekeri bırakma ve kalıcı alışkanlıklar hakkında sade, araştırmaya dayalı rehberler.",
+        idx_h1="Bahçeden <em>notlar.</em>",
+        idx_dek="Tatlı krizi ve şekeri bırakma üzerine sade rehberler. Diyet modası yok, suçluluk yok.",
+        idx_og="Pipgrove blogu",
     ),
 }
 
@@ -128,6 +144,8 @@ def nice_date(d, lang):
     y, m, dd = map(int, d.split("-"))
     if lang == "pt":
         return f"{dd} de {MONTHS_PT[m - 1]} de {y}"
+    if lang == "tr":
+        return f"{dd} {MONTHS_TR[m - 1]} {y}"
     return date(y, m, dd).strftime("%B %-d, %Y")
 
 
@@ -225,8 +243,9 @@ def main():
     # Home pages are translations of each other, so they carry hreflang alternates.
     alt = ('<xhtml:link rel="alternate" hreflang="en" href="https://pipgrove.com/"/>'
            '<xhtml:link rel="alternate" hreflang="pt" href="https://pipgrove.com/pt/"/>'
+           '<xhtml:link rel="alternate" hreflang="tr" href="https://pipgrove.com/tr/"/>'
            '<xhtml:link rel="alternate" hreflang="x-default" href="https://pipgrove.com/"/>')
-    urls = [("/", today, "1.0", alt), ("/pt/", today, "0.9", alt)]
+    urls = [("/", today, "1.0", alt), ("/pt/", today, "0.9", alt), ("/tr/", today, "0.9", alt)]
     for lang in S:
         mine = [p for p in posts if p["lang"] == lang]
         if mine:

@@ -22,6 +22,16 @@
       note: "Valores típicos de rótulos. Confira os seus: 4 g de açúcar adicionado equivalem a cerca de um cubo.",
       items: [["Lata de refrigerante (350 ml)", 37], ["Café adoçado ou cappuccino", 25], ["Barra de chocolate", 25], ["Copo de suco de caixinha", 22],
         ["Iogurte com sabor", 12], ["Tigela de cereal açucarado", 12], ["Biscoito recheado (3 un.)", 15], ["Bola de sorvete", 14], ["Colher de açúcar no café", 4], ["Brigadeiro", 8]]
+    },
+    tr: {
+      title: "Günlük eklenmiş şekerin", sub: "Sıradan bir günde neler tükettiğini işaretle.",
+      limit: "Günlük sınır", women: "Kadın (25 g)", men: "Erkek (36 g)", kids: "Çocuk (25 g)",
+      grams: "gram eklenmiş şeker", cubes: "küp şeker", of: "günlük sınıra oranı", year: "bu hızla yılda",
+      ok: "Sınırın epey altında. Böyle devam.", near: "Sınıra yakın. Günde tek bir değişiklik bile çok şey değiştirir.",
+      over: "Sınırın üstünde. Listendeki en büyük kalemden başla.",
+      note: "Tipik etiket değerleri. Kendi etiketlerine bak: 4 g eklenmiş şeker yaklaşık bir küp şekerdir.",
+      items: [["Kutu kola (330 ml)", 35], ["Şekerli kahve / frappe", 30], ["Çikolata bar", 25], ["Bir bardak meyve suyu (kutu)", 22],
+        ["Meyveli yoğurt", 12], ["Kase şekerli mısır gevreği", 12], ["Kremalı bisküvi (3 adet)", 15], ["Bir top dondurma", 14], ["Çaya bir küp şeker", 4], ["Bir dilim baklava", 20]]
     }
   };
 
@@ -60,8 +70,10 @@
     root.appendChild(el("p", "tool-note", s.note));
     function draw() {
       var g = counts.reduce(function (a, c, i) { return a + c * s.items[i][1]; }, 0), pct = Math.round(g / limit * 100);
-      big.innerHTML = "<b>" + g + "</b> " + s.grams + " · <b>" + Math.round(g / CUBE) + "</b> " + s.cubes +
-        " · <b>" + pct + "%</b> " + s.of + "<br><small>" + (g * 365 / 1000).toFixed(1) + " kg " + s.year + "</small>";
+      var kg = (g * 365 / 1000).toFixed(1);
+      big.innerHTML = "<b>" + g + "</b> " + s.grams + " · <b>" + Math.round(g / CUBE) + "</b> " + s.cubes + " · " +
+        (L === "tr" ? s.of + " <b>%" + pct + "</b><br><small>" + s.year + " " + kg.replace(".", ",") + " kg</small>"
+                    : "<b>" + pct + "%</b> " + s.of + "<br><small>" + kg + " kg " + s.year + "</small>");
       cubes(cb, g, limit);
       verdict.textContent = g === 0 ? "" : pct <= 70 ? s.ok : pct <= 100 ? s.near : s.over;
       verdict.className = "verdict " + (pct <= 70 ? "good" : pct <= 100 ? "mid" : "bad");
