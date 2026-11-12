@@ -1,4 +1,4 @@
-// Small interactive tools for blog posts. A post opts in with <div class="tool" data-tool="..." data-lang="en|pt"></div>.
+// Small interactive tools for blog posts. A post opts in with <div class="tool" data-tool="..." data-lang="en|pt|tr"></div>.
 // No tracking beyond one GA event per tool; detox progress stays in this browser only.
 (function () {
   var CUBE = 4; // grams of sugar in one sugar cube / teaspoon
@@ -134,7 +134,39 @@
     draw();
   }
 
-  var map = { "sugar-calc": sugarCalc, "drink-cubes": drinkCubes, "detox-plan": detoxPlan };
+  // "Added or natural?" sorter: tap a food to reveal whether its sugar counts as added (US label / AHA sense).
+  function sugarSort(root) {
+    var foods = [
+      ["Whole apple", 0, "Natural. The sugar is inside the fruit, with fibre and water."],
+      ["Plain milk", 0, "Natural. Lactose is milk's own sugar and is not counted as added."],
+      ["Strawberry yogurt", 1, "Usually added. Most fruit yogurts have sugar or fruit concentrate added. Check the Added Sugars line."],
+      ["Honey in your tea", 1, "Added. Honey, maple syrup and agave count as added sugar when you add them."],
+      ["Ketchup", 1, "Added. Ketchup often has about 4 g of added sugar per tablespoon."],
+      ["Banana", 0, "Natural. Whole fruit does not count toward added sugar limits."],
+      ["100% orange juice", 2, "Grey area. US labels do not list it as added, but the WHO counts juice as free sugar."],
+      ["Granola with dates", 1, "Often both. Dates are fruit, but most granolas also add syrup or sugar."]
+    ];
+    root.appendChild(el("p", "tool-h", "Added or natural? Tap a food"));
+    var row = el("div", "chips"), out = el("div", "out"), big = el("p", "big"), used = false;
+    out.setAttribute("aria-live", "polite");
+    var tags = ["Natural sugar", "Added sugar", "Free sugar (grey area)"], cls = ["good", "bad", "mid"];
+    var verdict = el("p", "verdict");
+    foods.forEach(function (f, i) {
+      var b = el("button", "", f[0]); b.type = "button";
+      b.onclick = function () {
+        [].forEach.call(row.children, function (c) { c.classList.remove("on"); }); b.classList.add("on");
+        big.innerHTML = "<b>" + f[0] + "</b>: " + tags[f[1]];
+        verdict.textContent = f[2]; verdict.className = "verdict " + cls[f[1]];
+        if (!used) { used = true; ev("sugar_sort"); }
+      };
+      row.appendChild(b);
+    });
+    big.textContent = "Pick a food above.";
+    out.append(big, verdict); root.append(row, out);
+    root.appendChild(el("p", "tool-note", "Based on the US Nutrition Facts label and the WHO definition of free sugars. Always check your own labels."));
+  }
+
+  var map = { "sugar-calc": sugarCalc, "drink-cubes": drinkCubes, "detox-plan": detoxPlan, "sugar-sort": sugarSort };
   document.querySelectorAll(".tool[data-tool]").forEach(function (root) {
     var f = map[root.getAttribute("data-tool")];
     if (f) f(root, root.getAttribute("data-lang") || document.documentElement.lang || "en");
