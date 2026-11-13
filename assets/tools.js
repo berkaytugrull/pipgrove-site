@@ -101,19 +101,41 @@
     show(drinks[0]);
   }
 
-  function detoxPlan(root) {
-    var days = [
-      ["Day 1", "Find your sources", "Read the labels of 5 things you eat often and note the added sugar."],
-      ["Day 2", "Swap your drink", "Replace one sweet drink with water, sparkling water or unsweetened tea."],
-      ["Day 3", "Protein breakfast", "Start the day with eggs, yogurt, beans or nuts instead of a sweet breakfast."],
-      ["Day 4", "Plan the danger zone", "Pick your craving time and write an if-then plan for it."],
-      ["Day 5", "Clear the reach", "Move sweets out of sight and put fruit and nuts where they were."],
-      ["Day 6", "Ride one wave", "When a craving hits, breathe slowly for 2 minutes or take a 15 minute walk."],
-      ["Day 7", "Notice the change", "Taste a piece of fruit slowly. Write down what feels different."]
-    ];
-    var KEY = "pipgrove-detox", done = {};
+  var DETOX = {
+    en: { h: "Your 7-day sugar detox checklist", note: "Your ticks are saved in this browser only.", all: "All 7 days done. That is a real reset.", of: " of 7 days done",
+      days: [
+        ["Day 1", "Find your sources", "Read the labels of 5 things you eat often and note the added sugar."],
+        ["Day 2", "Swap your drink", "Replace one sweet drink with water, sparkling water or unsweetened tea."],
+        ["Day 3", "Protein breakfast", "Start the day with eggs, yogurt, beans or nuts instead of a sweet breakfast."],
+        ["Day 4", "Plan the danger zone", "Pick your craving time and write an if-then plan for it."],
+        ["Day 5", "Clear the reach", "Move sweets out of sight and put fruit and nuts where they were."],
+        ["Day 6", "Ride one wave", "When a craving hits, breathe slowly for 2 minutes or take a 15 minute walk."],
+        ["Day 7", "Notice the change", "Taste a piece of fruit slowly. Write down what feels different."]] },
+    pt: { h: "Seu checklist de 7 dias sem açúcar", note: "Suas marcações ficam salvas só neste navegador.", all: "Os 7 dias concluídos. Isso é um recomeço de verdade.", of: " de 7 dias concluídos",
+      days: [
+        ["Dia 1", "Ache suas fontes", "Leia o rótulo de 5 coisas que você come sempre e anote o açúcar adicionado."],
+        ["Dia 2", "Troque a bebida", "Troque uma bebida doce por água, água com gás ou chá sem açúcar."],
+        ["Dia 3", "Café da manhã com proteína", "Comece o dia com ovos, iogurte natural, feijão ou castanhas."],
+        ["Dia 4", "Planeje a hora crítica", "Escolha o horário da vontade e escreva um plano se-então para ele."],
+        ["Dia 5", "Tire do alcance", "Guarde os doces fora da vista e deixe frutas e castanhas no lugar."],
+        ["Dia 6", "Atravesse uma onda", "Quando a vontade vier, respire devagar por 2 minutos ou caminhe 15 minutos."],
+        ["Dia 7", "Perceba a mudança", "Coma uma fruta devagar. Anote o que mudou."]] },
+    tr: { h: "7 günlük şeker detoksu kontrol listen", note: "İşaretlerin yalnızca bu tarayıcıda saklanır.", all: "7 günün hepsi tamam. Gerçek bir sıfırlama.", of: " / 7 gün tamam",
+      days: [
+        ["1. gün", "Kaynaklarını bul", "Sık yediğin 5 ürünün etiketini oku, eklenmiş şekeri not al."],
+        ["2. gün", "İçeceğini değiştir", "Bir şekerli içeceği su, maden suyu ya da şekersiz çayla değiştir."],
+        ["3. gün", "Proteinli kahvaltı", "Güne şekerli kahvaltı yerine yumurta, peynir, yoğurt ya da cevizle başla."],
+        ["4. gün", "Kriz saatini planla", "Tatlı isteğinin geldiği saati seç ve onun için bir eğer-o zaman planı yaz."],
+        ["5. gün", "Elinin altından kaldır", "Tatlıları gözden uzak koy, yerine meyve ve kuruyemiş bırak."],
+        ["6. gün", "Bir dalgayı atlat", "İstek gelince 2 dakika yavaş nefes al ya da 15 dakika yürü."],
+        ["7. gün", "Farkı fark et", "Bir meyveyi yavaşça ye. Neyin değiştiğini yaz."]] }
+  };
+
+  function detoxPlan(root, lang) {
+    var L = DETOX[lang] || DETOX.en, days = L.days;
+    var KEY = "pipgrove-detox" + (L === DETOX.en ? "" : "-" + lang), done = {};
     try { done = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) {}
-    root.appendChild(el("p", "tool-h", "Your 7-day sugar detox checklist"));
+    root.appendChild(el("p", "tool-h", L.h));
     var bar = el("div", "prog"), fill = el("i"), lbl = el("p", "tool-sub");
     bar.appendChild(fill); root.append(bar, lbl);
     var list = el("ul", "plan");
@@ -125,11 +147,11 @@
       li.append(cb, lab); list.appendChild(li);
     });
     root.appendChild(list);
-    root.appendChild(el("p", "tool-note", "Your ticks are saved in this browser only."));
+    root.appendChild(el("p", "tool-note", L.note));
     function draw() {
       var n = days.filter(function (_, i) { return done[i]; }).length;
       fill.style.width = (n / 7 * 100) + "%";
-      lbl.textContent = n === 7 ? "All 7 days done. That is a real reset." : n + " of 7 days done";
+      lbl.textContent = n === 7 ? L.all : n + L.of;
     }
     draw();
   }
