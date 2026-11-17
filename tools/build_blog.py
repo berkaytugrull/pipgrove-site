@@ -21,7 +21,7 @@ SITE = "https://pipgrove.com"
 
 
 def app_link(ct):
-    return f"https://apps.apple.com/app/apple-store/id6831633288?pt=129745812&amp;ct={ct}&amp;mt=8"
+    return f"https://apps.apple.com/app/pipgrove-quit-sugar-cravings/id6831633288?pt=129745812&amp;ct={ct}"
 
 
 MONTHS_TR = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"]
