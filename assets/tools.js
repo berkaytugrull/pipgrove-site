@@ -81,11 +81,26 @@
     draw();
   }
 
-  function drinkCubes(root) {
-    var drinks = [["Coca-Cola, 12 oz can", 39], ["Coca-Cola, 20 oz bottle", 65], ["Pepsi, 12 oz can", 41], ["Sprite, 12 oz can", 38],
-      ["Dr Pepper, 12 oz can", 39], ["Mountain Dew, 12 oz can", 46], ["Red Bull, 8.4 oz can", 27], ["Coke Zero / Diet Coke", 0]];
-    root.appendChild(el("p", "tool-h", "Pick a drink, see the sugar cubes"));
+  var DRINKS = {
+    en: { h: "Pick a drink, see the sugar cubes", of: "of sugar", about: "about", cubes: "sugar cubes", none: "no cubes", limit: 25,
+      note: "Values from US nutrition labels. One cube is about 4 g. Red cubes go past the 25 g daily limit the American Heart Association suggests for women.",
+      list: [["Coca-Cola, 12 oz can", 39], ["Coca-Cola, 20 oz bottle", 65], ["Pepsi, 12 oz can", 41], ["Sprite, 12 oz can", 38],
+        ["Dr Pepper, 12 oz can", 39], ["Mountain Dew, 12 oz can", 46], ["Red Bull, 8.4 oz can", 27], ["Coke Zero / Diet Coke", 0]] },
+    juice: { h: "Juice vs. fruit vs. soda, in sugar cubes", of: "of sugar", about: "about", cubes: "sugar cubes", none: "no cubes", limit: 25,
+      note: "Juice and fruit values from USDA FoodData Central, soda from the US label. One cube is about 4 g. Red cubes go past 25 g, the WHO's ideal daily cap on free sugars, which includes 100% juice but not whole fruit.",
+      list: [["Orange juice, 8 oz glass", 21], ["Orange juice, 12 oz", 31], ["Orange juice, 16 oz", 42], ["Apple juice, 8 oz glass", 24],
+        ["Whole medium orange", 12], ["Coca-Cola, 12 oz can", 39]] },
+    tr: { h: "Bir içecek seç, küp şekeri gör", of: "şeker", about: "yaklaşık", cubes: "küp şeker", none: "küp yok", limit: 25,
+      note: "Kola değerleri 100 ml'de yaklaşık 10,6 g şekerle hesaplandı; nektar tipik bir değer. Kendi etiketine bak. Bir küp yaklaşık 4 g. Kırmızı küpler DSÖ'nün ideal günlük 25 g serbest şeker sınırını aşan kısım.",
+      list: [["Kola, 200 ml bardak", 21], ["Kola, 330 ml kutu", 35], ["Kola, 500 ml şişe", 53], ["Kola, 1 litre", 106],
+        ["Red Bull, 250 ml kutu", 27], ["Meyve nektarı, 200 ml (tipik)", 22], ["Şekersiz kola (Zero / Light)", 0]] }
+  };
+
+  function drinkCubes(root, lang) {
+    var set = root.getAttribute("data-set"), D = DRINKS[set] || DRINKS[lang] || DRINKS.en, drinks = D.list;
+    root.appendChild(el("p", "tool-h", D.h));
     var row = el("div", "chips"), out = el("div", "out"), big = el("p", "big"), cb = el("div", "cubes"), used = false;
+    row.setAttribute("role", "group"); row.setAttribute("aria-label", D.h);
     out.setAttribute("aria-live", "polite");
     drinks.forEach(function (d, i) {
       var b = el("button", i === 0 ? "on" : "", d[0]); b.type = "button";
@@ -93,10 +108,10 @@
       row.appendChild(b);
     });
     out.append(big, cb); root.append(row, out);
-    root.appendChild(el("p", "tool-note", "Values from US nutrition labels. One cube is about 4 g. Red cubes go past the 25 g daily limit the American Heart Association suggests for women."));
+    root.appendChild(el("p", "tool-note", D.note));
     function show(d) {
-      big.innerHTML = d[1] ? "<b>" + d[1] + " g</b> of sugar · about <b>" + Math.round(d[1] / CUBE) + " sugar cubes</b>" : "<b>0 g</b> of sugar · no cubes";
-      cubes(cb, d[1], 25);
+      big.innerHTML = d[1] ? "<b>" + d[1] + " g</b> " + D.of + " · " + D.about + " <b>" + Math.round(d[1] / CUBE) + " " + D.cubes + "</b>" : "<b>0 g</b> " + D.of + " · " + D.none;
+      cubes(cb, d[1], D.limit);
     }
     show(drinks[0]);
   }
