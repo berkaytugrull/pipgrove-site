@@ -1,0 +1,7 @@
+{
+  "paywallXDelayMs": 1500,
+  "day3Paywall": true,
+  "lifetime": true,
+  "giftOffer": false,
+  "freeScansPerDay": 3
+}
