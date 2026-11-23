@@ -1,7 +1,7 @@
 lang: tr
 title: Kolada ne kadar şeker var? Kutu, şişe ve litre için küp şeker hesabı
-seotitle: Kolada Ne Kadar Şeker Var? Kaç Küp Şeker Eder?
-description: 330 ml kutu kolada yaklaşık 35 g şeker var, bu da 8-9 küp şeker eder. 200 ml, 500 ml ve 1 litre kolanın şekeri, günlük sınırla karşılaştırma ve kolayı azaltmanın yolları.
+seotitle: Kolada Kaç Küp Şeker Var? 330 ml, 500 ml ve 1 Litre
+description: 330 ml kutu kolada yaklaşık 35 g şeker var (8-9 küp), 1 litrede yaklaşık 106 g (27 küp). 200 ml bardak ve 500 ml şişe için tablo, günlük sınırla kıyas ve kolayı azaltmanın 6 yolu.
 slug: kolada-ne-kadar-seker-var
 date: 2026-11-18
 keyword: kolada ne kadar şeker var

@@ -1,7 +1,7 @@
 lang: pt
 title: Abstinência de açúcar: sintomas, quanto tempo dura e o que ajuda
-seotitle: Abstinência de Açúcar: Sintomas e Quanto Tempo Dura
-description: O que é a abstinência de açúcar, quais sintomas aparecem ao cortar o doce, quanto tempo costumam durar segundo os estudos e o que ajuda a passar pela primeira semana.
+seotitle: Abstinência de Açúcar: Sintomas Dia a Dia e Quanto Dura
+description: Os sintomas costumam ser mais fortes do dia 1 ao 5 e aliviar até o fim da primeira ou segunda semana. Veja a linha do tempo dia a dia, o que dizem os estudos e o que ajuda a atravessar a primeira semana.
 slug: abstinencia-de-acucar
 date: 2026-11-12
 keyword: abstinência de açúcar

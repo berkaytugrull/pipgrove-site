@@ -1,7 +1,7 @@
 lang: tr
 title: Günlük şeker ihtiyacı: günde kaç gram şeker fazla? (Hesaplayıcı)
-seotitle: Günlük Şeker İhtiyacı: Günde Kaç Gram Şeker? (Hesapla)
-description: Kadınlar, erkekler ve çocuklar için günlük eklenmiş şeker sınırı, bunun gerçek yiyeceklerde neye denk geldiği ve kendi gününü hesaplayabileceğin ücretsiz bir araç.
+seotitle: Günlük Şeker İhtiyacı: Günde Kaç Gram? 25 g mı, 50 g mı?
+description: Kısa cevap: eklenmiş şekerde üst sınır kadınlar için günde yaklaşık 25 g (6 küp), erkekler için 36 g (9 küp). DSÖ'nün %5 ve %10 sınırı, gerçek yiyeceklerde karşılığı ve ücretsiz hesaplayıcı.
 slug: gunluk-seker-ihtiyaci
 date: 2026-11-11
 keyword: günlük şeker ihtiyacı
