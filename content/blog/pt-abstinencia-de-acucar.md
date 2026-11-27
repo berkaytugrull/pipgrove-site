@@ -91,4 +91,4 @@ Os sintomas de reduzir o açúcar devem ser leves e passageiros. Converse com um
 - A fase mais difícil costuma ser entre o segundo e o quinto dia.
 - Sono, refeições de verdade, um plano para a vontade e trocas doces facilitam muito.
 
-O [Pipgrove](/pt/) foi feito para essa primeira semana: um botão SOS para a vontade de doce, um jardim que cresce a cada dia sem açúcar e uma carta gentil toda manhã. Por enquanto o app está em inglês.
+O [Pipgrove](/pt/) foi feito para essa primeira semana: um botão SOS para a vontade de doce, um jardim que cresce a cada dia sem açúcar e uma carta gentil toda manhã.

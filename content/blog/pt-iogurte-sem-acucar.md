@@ -87,4 +87,4 @@ Procure um médico ou nutricionista se você tem diabetes e quer saber como o io
 - Leia a linha de açúcares adicionados e compare por 100 g.
 - Compre o natural e adoce você mesmo com fruta, canela ou cacau.
 
-Se você quer apoio para diminuir o doce, o [Pipgrove](/pt/) tem um SOS para a hora da vontade e um jardim que cresce a cada dia sem açúcar. Por enquanto o app está em inglês.
+Se você quer apoio para diminuir o doce, o [Pipgrove](/pt/) tem um SOS para a hora da vontade e um jardim que cresce a cada dia sem açúcar.

@@ -87,4 +87,4 @@ Diyabetin, gebelik diyabetin ya da insülin direncin varsa esmer şekeri de norm
 - İkisi de serbest şeker sayılır ve günlük 25 gram hesabına girer.
 - Hangisini seçtiğinden çok, ne kadar kullandığın önemli.
 
-Şekeri azaltırken tatlı krizleri zorluyorsa, [Pipgrove](/tr/) bir SOS düğmesi ve her şekersiz günde büyüyen bir bahçe sunuyor. Uygulama şimdilik İngilizce.
+Şekeri azaltırken tatlı krizleri zorluyorsa, [Pipgrove](/tr/) bir SOS düğmesi ve her şekersiz günde büyüyen bir bahçe sunuyor.

@@ -77,4 +77,4 @@ Diyabetin varsa yoğurdun karbonhidrat planına nasıl gireceğini doktoruna ya 
 - Etikette "şekerler" satırı ikisini birlikte gösterir; içindekiler listesine bak.
 - Sade yoğurt al, meyve, tarçın ya da kakaoyla kendin tatlandır.
 
-Tatlı isteği geldiğinde yanında olacak bir yardımcı istersen [Pipgrove](/tr/) bir SOS düğmesi ve her şekersiz günde büyüyen bir bahçe sunuyor. Uygulama şimdilik İngilizce.
+Tatlı isteği geldiğinde yanında olacak bir yardımcı istersen [Pipgrove](/tr/) bir SOS düğmesi ve her şekersiz günde büyüyen bir bahçe sunuyor.

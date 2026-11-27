@@ -94,4 +94,4 @@ Diyabetin varsa, ilaç kullanıyorsan, hamileysen ya da emziriyorsan beslenmende
 - İlk günler en zorudur; birkaç hafta içinde çoğu kişi tatlı isteğinin zayıfladığını fark eder.
 - Meyve serbest; meyve suyu ve kuru meyveyi küçük porsiyonda tut.
 
-[Pipgrove](/tr/), eklenmiş şekeri azaltmana yardım eden sakin bir iPhone koçu. Tatlı krizi için bir SOS düğmesi ve şekersiz geçen her günle büyüyen bir bahçe var. Uygulama şimdilik İngilizce.
+[Pipgrove](/tr/), eklenmiş şekeri azaltmana yardım eden sakin bir iPhone koçu. Tatlı krizi için bir SOS düğmesi ve şekersiz geçen her günle büyüyen bir bahçe var.

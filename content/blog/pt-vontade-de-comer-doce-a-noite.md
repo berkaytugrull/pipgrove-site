@@ -94,4 +94,4 @@ Procure um médico se a vontade de doce vier junto com muita sede, vontade frequ
 - Na hora, espere dez minutos e mude de atividade; a vontade costuma passar.
 - Tenha trocas prontas e um novo "fim" para o jantar, como escovar os dentes ou fazer um chá.
 
-O [Pipgrove](/pt/) é um coach calmo para iPhone que ajuda você a comer menos açúcar adicionado, com um botão SOS para a vontade de doce e um jardim que cresce a cada dia. Por enquanto o app está em inglês.
+O [Pipgrove](/pt/) é um coach calmo para iPhone que ajuda você a comer menos açúcar adicionado, com um botão SOS para a vontade de doce e um jardim que cresce a cada dia.

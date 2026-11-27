@@ -81,4 +81,4 @@ Diyabetin, gebelik diyabetin ya da fenilketonürin varsa, hamileysen veya emziri
 - Aspartam 2B grubunda, ama günlük güvenli sınır değişmedi: kilo başına 40 mg.
 - En iyi kullanım: şekerli içecekten çıkarken kısa bir köprü, sonra genel olarak daha az tatlı.
 
-[Pipgrove](/tr/), eklenmiş şekeri azaltmana yardım eden sakin bir iPhone koçu. Tatlı krizleri için bir SOS düğmesi ve her gün büyüyen bir bahçesi var. Uygulama şimdilik İngilizce.
+[Pipgrove](/tr/), eklenmiş şekeri azaltmana yardım eden sakin bir iPhone koçu. Tatlı krizleri için bir SOS düğmesi ve her gün büyüyen bir bahçesi var.

@@ -99,4 +99,4 @@ Se você tem diabetes, pré-diabetes, doença renal ou outra condição em que a
 - Para a OMS, todos os tipos contam como açúcar livre.
 - Escolha pelo sabor e foque em usar menos no total.
 
-O [Pipgrove](/pt/) é um app para iPhone que ajuda a diminuir o açúcar adicionado um dia de cada vez, com um botão SOS para a hora da vontade. Por enquanto o app está em inglês.
+O [Pipgrove](/pt/) é um app para iPhone que ajuda a diminuir o açúcar adicionado um dia de cada vez, com um botão SOS para a hora da vontade.

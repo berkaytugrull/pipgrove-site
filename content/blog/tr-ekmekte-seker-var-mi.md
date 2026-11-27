@@ -73,4 +73,4 @@ Diyabetin, gebelik diyabetin ya da insülin direncin varsa ekmeğin türünü ve
 - Ekmeğin asıl karbonhidratı nişasta. Kan şekerini yükseltir ama eklenmiş şeker sayılmaz.
 - Tam tahıl seç, yanına protein koy, reçel ve balı ölç.
 
-Şekeri neden azaltmak isteyebileceğini merak ediyorsan [şekerin zararları](/tr/blog/sekerin-zararlari/) yazısına göz at. Tatlı isteği geldiğinde yanında olacak bir yardımcı istersen [Pipgrove](/tr/) bir SOS düğmesi ve her şekersiz günde büyüyen bir bahçe sunuyor. Uygulama şimdilik İngilizce.
+Şekeri neden azaltmak isteyebileceğini merak ediyorsan [şekerin zararları](/tr/blog/sekerin-zararlari/) yazısına göz at. Tatlı isteği geldiğinde yanında olacak bir yardımcı istersen [Pipgrove](/tr/) bir SOS düğmesi ve her şekersiz günde büyüyen bir bahçe sunuyor.

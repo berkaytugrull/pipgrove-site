@@ -70,7 +70,7 @@ Um brigadeiro não apaga a semana. Pergunte o que levou a isso (cansaço, estres
 
 ## Um coach no bolso
 
-O [Pipgrove](/pt/) tem um botão de SOS para a hora da vontade, um jardim que cresce a cada dia sem açúcar e uma carta gentil toda manhã. Por enquanto o app está em inglês.
+O [Pipgrove](/pt/) tem um botão de SOS para a hora da vontade, um jardim que cresce a cada dia sem açúcar e uma carta gentil toda manhã.
 
 Se você tem diabetes, histórico de transtorno alimentar ou vontade que parece fora de controle, converse com um médico ou nutricionista antes de mudar a alimentação.
 

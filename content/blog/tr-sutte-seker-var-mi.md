@@ -84,4 +84,4 @@ Diyabetin varsa sütün karbonhidrat planına nasıl gireceğini doktoruna ya da
 - Kakaolu sütte şeker yaklaşık iki katı, fazlası eklenmiş şeker.
 - Bitki sütlerinde "şekersiz" yazanı seç, yulaf sütünde etikete bak.
 
-Tatlı isteği geldiğinde sana destek olacak bir yardımcı istersen [Pipgrove](/tr/) bir SOS düğmesi ve her şekersiz günde büyüyen bir bahçe sunuyor. Uygulama şimdilik İngilizce.
+Tatlı isteği geldiğinde sana destek olacak bir yardımcı istersen [Pipgrove](/tr/) bir SOS düğmesi ve her şekersiz günde büyüyen bir bahçe sunuyor.

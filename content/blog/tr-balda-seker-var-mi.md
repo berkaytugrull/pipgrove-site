@@ -85,4 +85,4 @@ Diyabetin, gestasyonel diyabetin ya da kan şekeriyle ilgili başka bir durumun 
 - Bal kan şekerini yükseltir; diyabeti olanlar onu da şeker gibi saymalı.
 - Asıl fark, türünden değil miktardan gelir.
 
-Tatlı isteği geldiğinde sana destek olacak bir yardımcı istersen [Pipgrove](/tr/) bir SOS düğmesi ve her şekersiz günde büyüyen bir bahçe sunuyor. Uygulama şimdilik İngilizce.
+Tatlı isteği geldiğinde sana destek olacak bir yardımcı istersen [Pipgrove](/tr/) bir SOS düğmesi ve her şekersiz günde büyüyen bir bahçe sunuyor.

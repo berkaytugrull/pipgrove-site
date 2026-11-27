@@ -85,4 +85,4 @@ Se você tem diabetes ou pré-diabetes, converse com seu médico ou nutricionist
 - Os antioxidantes e minerais do mel existem, mas em quantidades pequenas.
 - O mel ajuda só se você usar menos. E nunca para bebês com menos de 1 ano.
 
-Se você quer apoio para diminuir o doce, o [Pipgrove](/pt/) tem um SOS para a hora da vontade e um jardim que cresce a cada dia sem açúcar. Por enquanto o app está em inglês.
+Se você quer apoio para diminuir o doce, o [Pipgrove](/pt/) tem um SOS para a hora da vontade e um jardim que cresce a cada dia sem açúcar.

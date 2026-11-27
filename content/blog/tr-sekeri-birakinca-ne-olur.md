@@ -46,4 +46,4 @@ Amerikan Kalp Derneği çoğu kadın için günde yaklaşık 25 g, çoğu erkek 
 
 Diyabetin varsa, kan şekerini etkileyen ilaç kullanıyorsan, hamileysen ya da yeme bozukluğu geçmişin varsa beslenmeni değiştirmeden önce doktoruna ya da diyetisyenine danış.
 
-[Pipgrove](/tr/) bu yolculuk için bir koç: kriz anı için SOS düğmesi, her şekersiz günle büyüyen bir bahçe ve kayma yaşasan bile silinmeyen günler. Uygulama şimdilik İngilizce.
+[Pipgrove](/tr/) bu yolculuk için bir koç: kriz anı için SOS düğmesi, her şekersiz günle büyüyen bir bahçe ve kayma yaşasan bile silinmeyen günler.

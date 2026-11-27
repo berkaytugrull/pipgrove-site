@@ -104,4 +104,4 @@ Procure um médico ou nutricionista se você tem diabetes ou pré-diabetes, se s
 
 Nos primeiros dias reduzindo o açúcar pode bater mais vontade e até um pouco de irritação. Explicamos isso em [abstinência de açúcar](/pt/blog/abstinencia-de-acucar/).
 
-O [Pipgrove](/pt/) é um coach calmo para iPhone que ajuda você a comer menos açúcar adicionado, com um botão SOS para os momentos de vontade e um jardim que cresce a cada dia. Por enquanto o app está em inglês.
+O [Pipgrove](/pt/) é um coach calmo para iPhone que ajuda você a comer menos açúcar adicionado, com um botão SOS para os momentos de vontade e um jardim que cresce a cada dia.

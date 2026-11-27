@@ -106,4 +106,4 @@ Diyabetin ya da gebelik diyabetin varsa, yemekten sonra belirgin halsizlik, baş
 - Tatlının yerine yeni bir yemek sonu ritüeli koy: şekersiz çay, meyve ya da diş fırçalamak.
 - Canın çekerse küçük, planlı ve suçluluksuz bir porsiyon ye.
 
-[Pipgrove](/tr/), eklenmiş şekeri azaltmana yardım eden sakin bir iPhone koçu. Tatlı krizleri için bir SOS düğmesi ve her gün büyüyen bir bahçesi var. Uygulama şimdilik İngilizce.
+[Pipgrove](/tr/), eklenmiş şekeri azaltmana yardım eden sakin bir iPhone koçu. Tatlı krizleri için bir SOS düğmesi ve her gün büyüyen bir bahçesi var.

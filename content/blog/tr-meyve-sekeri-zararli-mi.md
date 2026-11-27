@@ -77,4 +77,4 @@ Diyabetin ya da insülin direncin varsa; çok susama, sık idrara çıkma, açı
 
 Şekerin hangi biçimlerinin gerçekten sorun olduğunu [şekerin zararları](/tr/blog/sekerin-zararlari/) yazısında, günlük sınırları [günlük şeker ihtiyacı](/tr/blog/gunluk-seker-ihtiyaci/) yazısında bulabilirsin. Adım adım başlamak için [şekersiz beslenme rehberi](/tr/blog/sekersiz-beslenme/) de işine yarar.
 
-[Pipgrove](/tr/), eklenmiş şekeri azaltmana yardım eden sakin bir iPhone koçu. Tatlı krizleri için bir SOS düğmesi ve her gün büyüyen bir bahçesi var. Uygulama şimdilik İngilizce.
+[Pipgrove](/tr/), eklenmiş şekeri azaltmana yardım eden sakin bir iPhone koçu. Tatlı krizleri için bir SOS düğmesi ve her gün büyüyen bir bahçesi var.

@@ -96,4 +96,4 @@ Se você tem diabetes, pré-diabetes ou resistência à insulina, converse com s
 - Um copo de 200 ml tem, em geral, de 4 a 6 cubos de açúcar.
 - Prefira a fruta inteira, dilua o suco e reserve a caixinha para de vez em quando.
 
-Se as bebidas doces são o seu ponto fraco, o [Pipgrove](/pt/) tem um botão de SOS para a hora da vontade e um jardim que cresce a cada dia sem açúcar. Por enquanto o app está em inglês.
+Se as bebidas doces são o seu ponto fraco, o [Pipgrove](/pt/) tem um botão de SOS para a hora da vontade e um jardim que cresce a cada dia sem açúcar.

@@ -79,4 +79,4 @@ Se você tem diabetes, pré-diabetes, alguma alergia alimentar ou está grávida
 - Fruta madura, cacau, iogurte natural e especiarias fazem quase todo o trabalho.
 - O paladar se acostuma com menos doce em algumas semanas.
 
-O [Pipgrove](/pt/) é um app para iPhone que ajuda a diminuir o açúcar adicionado um dia de cada vez, com um botão SOS para a hora da vontade. O app está em inglês por enquanto.
+O [Pipgrove](/pt/) é um app para iPhone que ajuda a diminuir o açúcar adicionado um dia de cada vez, com um botão SOS para a hora da vontade.

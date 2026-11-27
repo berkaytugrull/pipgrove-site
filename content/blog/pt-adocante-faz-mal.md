@@ -86,4 +86,4 @@ Procure um médico ou nutricionista se você tem diabetes, doença renal, fenilc
 - O aspartame foi classificado como "possivelmente cancerígeno" pela IARC, mas o limite diário seguro de 40 mg/kg foi mantido.
 - O melhor uso do adoçante é como ponte para um paladar que pede menos doce.
 
-Se você quer apoio nesse caminho, o [Pipgrove](/pt/) tem um SOS para a hora da vontade e um jardim que cresce a cada dia sem açúcar. Por enquanto o app está em inglês.
+Se você quer apoio nesse caminho, o [Pipgrove](/pt/) tem um SOS para a hora da vontade e um jardim que cresce a cada dia sem açúcar.

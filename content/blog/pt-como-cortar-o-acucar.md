@@ -85,4 +85,4 @@ Procure um médico ou nutricionista se você tem diabetes, pré-diabetes ou outr
 - A sobremesa vem por último, e não precisa sumir.
 - Fruta inteira não é o problema; o alvo é o açúcar adicionado.
 
-O [Pipgrove](/pt/) é um app para iPhone que ajuda a diminuir o açúcar adicionado um dia de cada vez, com um botão SOS para a hora da vontade e um jardim que cresce com você. O app está em inglês por enquanto.
+O [Pipgrove](/pt/) é um app para iPhone que ajuda a diminuir o açúcar adicionado um dia de cada vez, com um botão SOS para a hora da vontade e um jardim que cresce com você.

@@ -87,4 +87,4 @@ Diyabetin varsa, kan şekerini etkileyen bir ilaç kullanıyorsan, hamileysen ya
 - Etikette içindekiler listesine bak; sonu -oz ile bitenler, şuruplar, bal ve pekmez eklenmiş şekerdir.
 - Esnek ve nazik bir hedef, katı yasaklardan daha uzun sürer.
 
-[Pipgrove](/tr/), eklenmiş şekeri bırakırken sana eşlik eden sakin bir iPhone koçu: tatlı krizi için SOS düğmesi, şekersiz her günle büyüyen bir bahçe ve her sabah nazik bir mektup. Uygulama şimdilik İngilizce.
+[Pipgrove](/tr/), eklenmiş şekeri bırakırken sana eşlik eden sakin bir iPhone koçu: tatlı krizi için SOS düğmesi, şekersiz her günle büyüyen bir bahçe ve her sabah nazik bir mektup.

@@ -97,4 +97,4 @@ Diyabetin varsa ya da kan şekerini etkileyen bir ilaç kullanıyorsan, gıda al
 - Hazır ürünlerde içindekiler listesine bak.
 - Haftalık küçük bir hazırlık, plansız atıştırmayı azaltır.
 
-Tatlı tarafını da düşünüyorsan [şekersiz tatlı](/tr/blog/sekersiz-tatli/) fikirlerine göz at. [Pipgrove](/tr/), eklenmiş şekeri günden güne azaltmana yardım eden sakin bir iPhone koçu ve tatlı krizi anı için bir SOS düğmesi var. Uygulama şimdilik İngilizce.
+Tatlı tarafını da düşünüyorsan [şekersiz tatlı](/tr/blog/sekersiz-tatli/) fikirlerine göz at. [Pipgrove](/tr/), eklenmiş şekeri günden güne azaltmana yardım eden sakin bir iPhone koçu ve tatlı krizi anı için bir SOS düğmesi var.

@@ -96,4 +96,4 @@ Diyabetin varsa ya da kan şekerini etkileyen ilaç kullanıyorsan, hamileysen v
 - İlk günler en zorudur; alışkanlıkların oturması birkaç hafta ila birkaç ay sürebilir.
 - Bir tatlı yemek planı bozmaz. Mükemmel değil, sürdürülebilir olmak önemli.
 
-[Pipgrove](/tr/), eklenmiş şekeri azaltmana yardım eden sakin bir iPhone koçu. Tatlı krizi için bir SOS düğmesi ve şekersiz geçen her günle büyüyen bir bahçe var. Uygulama şimdilik İngilizce.
+[Pipgrove](/tr/), eklenmiş şekeri azaltmana yardım eden sakin bir iPhone koçu. Tatlı krizi için bir SOS düğmesi ve şekersiz geçen her günle büyüyen bir bahçe var.

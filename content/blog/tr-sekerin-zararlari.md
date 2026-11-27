@@ -81,4 +81,4 @@ Diyabetin, gebelik diyabetin ya da insülin direncin varsa; çok susama, sık id
 - DSÖ'ye göre 2.000 kalorilik bir günde serbest şeker 50 gramın altında, ideali 25 gram civarında olmalı.
 - Amaç yasak değil denge: önce içecekleri azalt, tatlıyı planla, suçluluk duyma.
 
-[Pipgrove](/tr/), eklenmiş şekeri azaltmana yardım eden sakin bir iPhone koçu. Tatlı krizleri için bir SOS düğmesi ve her gün büyüyen bir bahçesi var. Uygulama şimdilik İngilizce.
+[Pipgrove](/tr/), eklenmiş şekeri azaltmana yardım eden sakin bir iPhone koçu. Tatlı krizleri için bir SOS düğmesi ve her gün büyüyen bir bahçesi var.

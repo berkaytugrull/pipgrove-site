@@ -79,4 +79,4 @@ Procure um médico ou nutricionista se você tem diabetes ou pré-diabetes e que
 - Adoçante pode ser ponte, mas não deve ser a estratégia principal.
 - O paladar se ajusta em algumas semanas.
 
-Se a vontade de doce aparece forte no meio do caminho, leia [vício em açúcar](/pt/blog/vicio-em-acucar/). O [Pipgrove](/pt/) é um app para iPhone que ajuda a diminuir o açúcar adicionado um dia de cada vez, com um botão SOS para a hora da vontade. O app está em inglês por enquanto.
+Se a vontade de doce aparece forte no meio do caminho, leia [vício em açúcar](/pt/blog/vicio-em-acucar/). O [Pipgrove](/pt/) é um app para iPhone que ajuda a diminuir o açúcar adicionado um dia de cada vez, com um botão SOS para a hora da vontade.

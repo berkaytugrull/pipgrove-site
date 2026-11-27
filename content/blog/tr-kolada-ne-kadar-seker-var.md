@@ -81,4 +81,4 @@ Diyabetin, gebelik diyabetin ya da insülin direncin varsa içecek seçimlerini 
 - Tek bir kutu, DSÖ'nün ideal günlük 25 g hedefini geçiyor.
 - Boyu küçültmek, kolayı öğünlerden çıkarmak ve maden suyuna geçmek en kolay başlangıçlar.
 
-[Pipgrove](/tr/), eklenmiş şekeri azaltmana yardım eden sakin bir iPhone koçu. Kola isteği geldiğinde basabileceğin bir SOS düğmesi ve her gün büyüyen bir bahçesi var. Uygulama şimdilik İngilizce.
+[Pipgrove](/tr/), eklenmiş şekeri azaltmana yardım eden sakin bir iPhone koçu. Kola isteği geldiğinde basabileceğin bir SOS düğmesi ve her gün büyüyen bir bahçesi var.

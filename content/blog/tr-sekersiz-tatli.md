@@ -79,4 +79,4 @@ Diyabetin, insülin direncin ya da gıda alerjin varsa, hamileysen ya da tatlı 
 - Olgun meyve, kakao, yoğurt ve baharatlar işin çoğunu yapar.
 - Damak zevkin birkaç hafta içinde daha az tatlıya alışır.
 
-[Pipgrove](/tr/), eklenmiş şekeri azaltmana yardım eden sakin bir iPhone koçu. Tatlı krizleri için bir SOS düğmesi ve her gün büyüyen bir bahçesi var. Uygulama şimdilik İngilizce.
+[Pipgrove](/tr/), eklenmiş şekeri azaltmana yardım eden sakin bir iPhone koçu. Tatlı krizleri için bir SOS düğmesi ve her gün büyüyen bir bahçesi var.

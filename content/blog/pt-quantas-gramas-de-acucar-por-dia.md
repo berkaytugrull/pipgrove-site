@@ -94,4 +94,4 @@ Procure um médico ou nutricionista se você tem diabetes ou pré-diabetes, se e
 - Uma única lata de refrigerante pode passar da meta ideal do dia.
 - No rótulo, olhe a linha "açúcares adicionados" e a lupa da Anvisa.
 
-O [Pipgrove](/pt/) é um coach calmo para iPhone que ajuda você a comer menos açúcar adicionado, com um botão SOS para os momentos de vontade e um jardim que cresce a cada dia. Por enquanto o app está em inglês.
+O [Pipgrove](/pt/) é um coach calmo para iPhone que ajuda você a comer menos açúcar adicionado, com um botão SOS para os momentos de vontade e um jardim que cresce a cada dia.

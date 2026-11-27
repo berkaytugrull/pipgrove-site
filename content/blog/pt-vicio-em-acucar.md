@@ -104,4 +104,4 @@ Procure um médico ou nutricionista se você tem diabetes ou outra condição de
 - Comece pela maior fonte de açúcar, coma refeições regulares, mude o ambiente e tenha um plano para os horários críticos.
 - Os primeiros dias são os mais difíceis. Depois de algumas semanas, o paladar se ajusta.
 
-O [Pipgrove](/pt/) é um coach calmo para iPhone que ajuda você a comer menos açúcar adicionado. Tem um botão SOS para os momentos de vontade e um jardim que cresce a cada dia. Por enquanto o app está em inglês.
+O [Pipgrove](/pt/) é um coach calmo para iPhone que ajuda você a comer menos açúcar adicionado. Tem um botão SOS para os momentos de vontade e um jardim que cresce a cada dia.

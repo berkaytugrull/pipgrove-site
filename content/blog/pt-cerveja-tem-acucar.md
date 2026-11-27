@@ -90,4 +90,4 @@ Se você tem diabetes, principalmente se usa insulina ou remédios que podem cau
 - Cerveja sem álcool pode ter bem mais açúcar: confira a tabela.
 - Drinks prontos e sidras são os mais doces da geladeira.
 
-Se o doce costuma aparecer depois de uma saída ou de um jogo, o [Pipgrove](/pt/) tem um botão de SOS para a hora da vontade e um jardim que cresce a cada dia sem açúcar. Por enquanto o app está em inglês.
+Se o doce costuma aparecer depois de uma saída ou de um jogo, o [Pipgrove](/pt/) tem um botão de SOS para a hora da vontade e um jardim que cresce a cada dia sem açúcar.

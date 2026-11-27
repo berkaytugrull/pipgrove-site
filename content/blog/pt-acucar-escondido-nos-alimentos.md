@@ -85,4 +85,4 @@ Procure um médico se você tem diabetes, pré-diabetes ou resistência à insul
 - Olhe a lupa da Anvisa na frente e a linha "açúcares adicionados" atrás.
 - Troque primeiro o que você come todo dia, um produto por vez.
 
-O [Pipgrove](/pt/) é um coach calmo para iPhone que ajuda você a comer menos açúcar adicionado, com um botão SOS para os momentos de vontade e um jardim que cresce a cada dia. Por enquanto o app está em inglês.
+O [Pipgrove](/pt/) é um coach calmo para iPhone que ajuda você a comer menos açúcar adicionado, com um botão SOS para os momentos de vontade e um jardim que cresce a cada dia.
